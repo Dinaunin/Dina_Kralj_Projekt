@@ -1,0 +1,249 @@
+
+<HTML>
+
+<HEAD>
+
+<style>
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+	border: 1px solid #ccc;
+    border-radius: 4px;
+	background-color: white;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+	border: 1px solid #ccc;
+    border-radius: 4px;
+	background-color: white;
+	resize: none;
+}
+
+input[type=submit] {
+    background-color: #FB95C2;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+
+div {
+    border-radius: 10px;
+    background-color: rgba(60, 60, 60, 0.90);
+    padding: 30px;
+	width:400px;
+margin:auto;
+	
+}
+
+
+</style>
+
+<link href='https://fonts.googleapis.com/css?family=Aubrey' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+<style>
+body {
+    font-family: 'Aubrey';font-size: 25px;
+}
+</style>
+
+
+<TITLE>Dina Kralj</TITLE>
+
+
+
+<style>
+body {
+    background-image: url("https://images.pexels.com/photos/168803/pexels-photo-168803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+	 background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+	color:white; 
+	
+}
+ul.lista {
+    margin: auto;
+    padding: 30px;
+	background-color:rgba(60, 60, 60, 0.3);
+	width:25%;
+	 text-align: center;
+	  list-style-type: none;
+	
+}
+
+table {
+    border-collapse: collapse;
+	margin:auto;
+	border: 2px solid white;
+   
+}
+
+.button {
+ 
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  transition: .5s ease;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+	font-size: 25px;
+	background-color:rgba(255, 255, 255, 0.7);
+}
+</style>
+
+</HEAD>
+
+
+
+
+
+
+
+
+<body>
+
+<h1 style="background-color:rgba(60, 60, 60, 0.5); padding: 25px;">Osobna stranica-CSS</h1>
+
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#FB95C2;width:140px;height:70px;padding:20px;">
+Ova stranica...</div>
+
+<script>
+function mOver(obj) {
+  obj.innerHTML = "...je napravljena..."
+}
+
+function mOut(obj) {
+  obj.innerHTML = "... pomoću HTML-a, CSS-a i Javascripta"
+}
+</script>
+
+</br>
+
+    <div> 
+<button class="button" onclick="document.getElementById('sat').innerHTML=Date()">Danas je datum?</button>
+<p id="sat"></p>
+</div>
+
+  
+<h3 style="padding: 25px;">Do praznika ima još:</h3>
+
+  <div> 
+<p id="demo"></p>
+
+<script>
+
+var countDownDate = new Date("Dec 21, 2018 21:00:00").getTime();
+
+
+var x = setInterval(function() {
+
+ 
+    var now = new Date().getTime();
+    
+ 
+    var distance = countDownDate - now;
+    
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+ 
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+ 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+</div>
+
+<H2 style="font-family:Allura;font-size: 60 px;">Dina Kralj</H2>
+
+
+
+<ul class="lista">
+	<li>Datum rodenja : 25.1.1994 </li>
+	<li>Obrazovanje: Prva gimnazija Varazdin</li>
+	<li>Hobiji: ilustracija, sviranje gitare...</li>
+	<li>Multimedija, primjena i oblikovanje</li>
+	
+</ul>
+
+  
+   
+    <H2 style="color:White;font-family:Aubrey;font-size: 30px">Linkovi:</H2>  
+	
+    <TABLE border="1">
+        <TR>
+            <TD> <a href= http://www.fashion.hr/>Fashion.hr</a> </TD>
+         <TD>  <a href=  https://www.youtube.com//>Youtube</a> </TD> 
+		 <TD>  <a href= http://deegallery.wixsite.com/portfolio>Radovi</a> </TD> 
+		  <TD>  <a href= https://www.unin.hr/>Unin</a> </TD> 
+    </TR>
+</TABLE>
+    
+     <br/>
+	<br/>
+  <div>  
+<form method="POST"
+ACTION="mailto: dinkralj@unin.hr"
+enctype="text/plain">
+    <p style="color:White;font-family:Allura;font-size: 25px;">
+        Ime i prezime: <br>
+		<input type="text" name="ime" size="20">
+    </P>
+	
+	
+	<p style="color:White;font-family:Allura;font-size: 25px;"> Poruka: <br>
+		<textarea rows=" "5" name=""poruka" cols= "40"> 
+</textarea>
+     </P>
+	 
+					<br/>
+ 
+				  <input type="submit" value="Pošalji">
+</form>
+</div>
+    <br/>
+	
+	
+	
+
+</BODY>
+
+</HTML> 
